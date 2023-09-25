@@ -12,6 +12,8 @@ See the <a href="https://github.com/JetBrains/jewel">Jewel repository</a> for mo
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="org.jetbrains.jewel.samples.ideplugin.Startup"/>
+        <toolWindowAllowlist id="BSP"/>
 
         <toolWindow id="JewelDemo" anchor="bottom" secondary="false" canCloseContents="false"
             factoryClass="org.jetbrains.jewel.samples.ideplugin.JewelDemoToolWindow" />
